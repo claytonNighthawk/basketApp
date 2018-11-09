@@ -43,7 +43,6 @@
 # -----------------------------------------------------------------
 
 # ignore all files starting with . or ~
-.*
 ~*
 
 # ignore node/grunt dependency directories
@@ -62,6 +61,7 @@ node_modules/
 ehthumbs.db
 Thumbs.db
 
+# ignore dist directory
 dist/
 
 # ignore Editor files
@@ -97,7 +97,3 @@ dist/
 # -------------------------
  
 # track these files, if they exist
-!.babelrc
-!.gitignore
-!.editorconfig
-!.phpcs.xml.dist

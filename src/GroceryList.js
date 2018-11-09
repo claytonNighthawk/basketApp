@@ -1,13 +1,12 @@
 import React from "react";
 import Item from "./Item";
-import style from "./Item.css";
 
 const GroceryList = props => {
-  const { onClear, addToBasket, onDelete } = props;
+  const { onClear, addToBasket, onDelete, className } = props;
   const groceryList = Object.entries(props.groceryList);
 
   return (
-    <div className={style.basket}>
+    <div className={className}>
       {groceryList.map((element, i) => (
         <Item
           name={element[0]}

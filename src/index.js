@@ -85,6 +85,7 @@ export default class Index extends React.Component {
           onClear={this.clearBasket}
           addToBasket={this.addToBasket}
           onDelete={this.removeItemFromGroceryList}
+          className={style.groceryList}
         />
       </div>
     );
