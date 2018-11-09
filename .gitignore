@@ -62,6 +62,8 @@ node_modules/
 ehthumbs.db
 Thumbs.db
 
+dist/
+
 # ignore Editor files
 *.sublime-project
 *.sublime-workspace

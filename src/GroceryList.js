@@ -1,27 +1,26 @@
 import React from "react";
 import Item from "./Item";
-
-const onClick = () => {
-  console.log("CLICKED!");
-};
+import style from "./Item.css";
 
 const GroceryList = props => {
-  const { onClear } = props;
+  const { onClear, addToBasket, onDelete } = props;
   const groceryList = Object.entries(props.groceryList);
-  console.log(groceryList);
 
   return (
-    <div>
+    <div className={style.basket}>
       {groceryList.map((element, i) => (
         <Item
           name={element[0]}
           quantity={element[1].quantity}
           key={i}
           inBasket={element[1].inBasket}
-          onClick={onClick}
+          onClick={addToBasket}
+          onDelete={onDelete}
         />
       ))}
-      <button onClick={onClear}>Empty Basket</button>
+      {groceryList.length > 0 && (
+        <button onClick={onClear}>Empty Basket</button>
+      )}
     </div>
   );
 };

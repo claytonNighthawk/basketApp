@@ -1,22 +1,21 @@
 import React from "react";
+import style from "./Item.css";
 
 const Item = props => {
-  const { name, quantity, onClick, inBasket } = props;
-  const style = {
-    margin: 10,
-    padding: 20,
-    boxShadow: `0px 4px 8px 0px #d1d1d1`,
-    width: 100,
-    backgroundColor: `#ffffff`
-  };
+  const { name, quantity, onClick, inBasket, onDelete } = props;
+  let cardStyle = style.notInBasket;
 
   if (inBasket) {
-    style.backgroundColor = "#ffff80";
+    cardStyle = style.inBasket;
   }
 
   return (
-    <div style={style} onClick={onClick}>
+    <div className={cardStyle} onClick={() => onClick(name)}>
       {quantity} {name}
+      <br />
+      <button onClick={() => onDelete(name)} className={style.deleteButton}>
+        Delete
+      </button>
     </div>
   );
 };
