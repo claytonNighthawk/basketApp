@@ -97,7 +97,7 @@ dist/
 # -------------------------
  
 # track these files, if they exist
-!.bablerc
+!.babelrc
 !.gitignore
 !.editorconfig
 !.phpcs.xml.dist
