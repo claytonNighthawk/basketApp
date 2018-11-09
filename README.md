@@ -3,6 +3,7 @@
 ## To Run
 * `npm install`
 * `npm start`
+
 This will bring up a tab in your default browser with the app running in hot reload mode. 
 
 ## The Grocery List App
