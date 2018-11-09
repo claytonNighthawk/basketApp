@@ -1,5 +1,10 @@
 # untapt's Front End Tech Test
 
+## To Run
+* `npm install`
+* `npm start`
+This will bring up a tab in your default browser with the app running in hot reload mode. 
+
 ## The Grocery List App
 
 I live with two roommates. We go grocery shopping together every other Tuesday. There are some items that we purchase every week – things like milk, cereal, and a selection of gourmet cheeses. In addition, each of us chooses a different recipe to make that we will eat together as part of a 'family meal.' Keeping track of all of these items is complicated – we need a tool to help us keep track of what to buy. Let's call it _Basket_.
